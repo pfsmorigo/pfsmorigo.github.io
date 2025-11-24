@@ -1,0 +1,5 @@
+*.lock
+.jekyll-metadata
+.sass-cache
+_site
+*.swp
