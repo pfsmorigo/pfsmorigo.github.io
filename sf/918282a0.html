@@ -1,6 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <style>
+        /* Reset default margins */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Flexbox to center content vertically and horizontally */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Full viewport height */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsive text sizing */
+        .message {
+            /* clamp(minimum, preferred, maximum) */
+            font-size: clamp(1.5rem, 5vw, 4rem); 
+            font-weight: bold;
+            line-height: 1.4;
+            max-width: 800px;
+        }
+
+        .highlight {
+            color: #d32f2f; /* A nice red for the name */
+            display: block; /* Puts name on its own line on small screens if needed */
+            margin-top: 10px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
 <body>
-<h1>Olá, seu amigo secreto é <b>Goreti</b>. Não conte a ninguem!</h1>
+    <div class="container">
+        <div class="message">
+            Olá! Seu amigo secreto é:
+            <span class="highlight">NAME_PLACEHOLDER</span>
+        </div>
+        <div class="footer">
+            🤫 Não conte a ninguém!
+        </div>
+    </div>
 </body>
-</html>⏎
+</html>
