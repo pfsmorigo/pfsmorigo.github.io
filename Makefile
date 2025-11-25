@@ -8,4 +8,4 @@ builddeps:
 	sudo apt install jekyll jekyll-theme-minima ruby-jekyll-{paginate,sitemap,archives}
 
 clean:
-	$(RF) -rf Gemfile.lock _site
+	$(RM) -rf Gemfile.lock _site .jekyll-cache .jekyll-metadata
